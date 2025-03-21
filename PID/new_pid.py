@@ -39,7 +39,6 @@ class PID:
         self.setpoint = setpoint
         self.sample_time = sample_time
         self.output_limits = output_limits
-        self.time_fn = time_fn
         self.starting_output = starting_output
 
         self._last_time = None
@@ -49,4 +48,19 @@ class PID:
         self._integral = 0
         self._derivative = 0
         
-        self._output = starting_output
+        self._last_time = None
+        self._last_output = None
+        self._last_error = None
+        self._last_input = None
+        
+        if time_fn is not None:
+            self.time_fn = time_fn
+        else:
+            import time
+            
+            try:
+                # Get monotonic time to ensure that time deltas are always positive
+                self.time_fn = time.monotonic
+            except AttributeError:
+                # time.monotonic() not available (using python < 3.3), fallback to time.time()
+                self.time_fn = time.time
