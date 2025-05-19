@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import scipy.signal as sgnl
+import scipy.signal as sg
 
 class MyComplex(complex):
     def __new__(cls, real=0.0, imag=0.0):
@@ -157,15 +157,26 @@ class TransferFunction:
 
 
 class Controller:
-    def __init__(self, Gs: TransferFunction, Hs: TransferFunction, Kc=1.0):
+    def __init__(self, Gs: TransferFunction, Hs: TransferFunction, Kc=1.0, dT=0.1):
         self.Gs = Gs
         self.Hs = Hs
         self.Kc = Kc
+        self.Ts = dT
         self._update_loop()
+        
+    def bilinear(self, tf: TransferFunction) -> TransferFunction:
+        """
+        Return a new TransferFunction which is the bilinear (Tustin)
+        discretization of this continuous‐time TF, with sample time Ts.
+        """
+        
+        tf_dict = tf.to_dict()
+        b_z, a_z = sg.bilinear(tf_dict['den'], tf_dict['num'], fs=1.0/self.Ts)
+        return TransferFunction(b_z.tolist(), a_z.tolist())
 
     def _update_loop(self):
         closed_loop = (self.Kc * self.Gs) / (1 + self.Kc * self.Gs * self.Hs)
-        self._loop_tf = closed_loop
+        self._loop_tf = self.bilinear(closed_loop)
 
     def reset(self):
         self._loop_tf.reset()
@@ -192,34 +203,26 @@ class Controller:
 
 TF = TransferFunction
 if __name__ == "__main__":
-    G = TF([0.3], [1.0, 1.2, 0.36])
+    G = TF([0.3], [1.0, 0.2, 0.36])   
+    wn = 1
+    H = TF([0.4], [1])
     
-    print('G(s) = ')
-    print(G)
-    print()
-    print(G.poles, end='\n\n')
-    
-    wn = 2
-    H = (TF([1, 2*wn, wn**2]) - G.den)/G.num
-    print('H(s) = ')
-    print(H, end='\n\n')
+    time, dT = np.linspace(0, 12, 300, retstep=True)
 
-    controller = Controller(G, H, Kc=2.0)
-    tf = controller.tf.to_dict()
-    #system = sgnl.TransferFunction(tf['num'], tf['den'])
-    print(controller.tf)
-    
-    # t, y = sgnl.step(system)
+    controller = Controller(G, H, Kc=0.3, dT=dT)
+    Ts = controller.tf
+    print('Ts =')
+    print(Ts, end='\n\n')
 
     controller.print_poles_zeros("poles_zeros.txt")
-
+    
     setpoint = 1.0
     y = 0.0
-
     t_values = [0]
     y_values = [y]
+    time = np.delete(time, 0)
 
-    for t in np.linspace(0.04, 12, 299):
+    for t in time:
         y = controller(setpoint)
         t_values.append(t)
         y_values.append(y)
@@ -227,7 +230,6 @@ if __name__ == "__main__":
     print(f'Error from setpoint to end result: {setpoint-y}')
     plt.figure(figsize=(10, 5))
     plt.plot(t_values, y_values, label="Output")
-    # plt.plot(t, y, label="Step Response")
     plt.axhline(setpoint, color='r', linestyle='--', label="Setpoint")
     plt.title("Closed-Loop Step Response")
     plt.xlabel("Time [s]")
