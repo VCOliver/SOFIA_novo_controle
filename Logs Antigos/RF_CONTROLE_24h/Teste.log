@@ -1,0 +1,71 @@
+2020-01-26 02:37:02,321 - monidialog - INFO - Operação iniciada
+2020-01-26 02:37:02,323 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:37:20,081 - monidialog - ERROR - Roll-off ocorreu! Operacao Pausada!
+2020-01-26 02:37:45,001 - monidialog - INFO - Operação iniciada
+2020-01-26 02:37:45,002 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:37:45,003 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:37:45,005 - monidialog - INFO - etapa: 1
+2020-01-26 02:37:45,006 - monidialog - INFO - Potencia RT: 5  Tempo: 65  Modo: 1
+2020-01-26 02:37:52,521 - monidialog - INFO - Operação iniciada
+2020-01-26 02:37:52,522 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:38:39,727 - monidialog - INFO - Operação iniciada
+2020-01-26 02:38:39,728 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:38:39,729 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:38:39,729 - monidialog - INFO - etapa: 2
+2020-01-26 02:38:39,730 - monidialog - INFO - Potencia RT: 5  Tempo: 65  Modo: 1
+2020-01-26 02:38:51,351 - monidialog - INFO - Operação iniciada
+2020-01-26 02:38:51,352 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:39:56,482 - monidialog - INFO - Operação iniciada
+2020-01-26 02:39:56,483 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:39:56,484 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:39:56,484 - monidialog - INFO - etapa: 3
+2020-01-26 02:39:56,485 - monidialog - INFO - Potencia RT: 5.0  Tempo: 65  Modo: 1
+2020-01-26 02:41:12,591 - monidialog - INFO - Operação iniciada
+2020-01-26 02:41:12,593 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:42:17,596 - monidialog - INFO - Operação iniciada
+2020-01-26 02:42:17,598 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:42:17,599 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:42:17,601 - monidialog - INFO - etapa: 2
+2020-01-26 02:42:17,602 - monidialog - INFO - Potencia RT: 5  Tempo: 65  Modo: 1
+2020-01-26 02:42:27,351 - monidialog - INFO - Operação iniciada
+2020-01-26 02:42:27,352 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:43:32,358 - monidialog - INFO - Operação iniciada
+2020-01-26 02:43:32,359 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:43:32,359 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:43:32,360 - monidialog - INFO - etapa: 3
+2020-01-26 02:43:32,361 - monidialog - INFO - Potencia RT: 5.0  Tempo: 65  Modo: 1
+2020-01-26 02:44:30,910 - monidialog - INFO - Operação iniciada
+2020-01-26 02:44:30,911 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:45:30,916 - monidialog - INFO - Operação iniciada
+2020-01-26 02:45:30,917 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:45:30,919 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:45:30,920 - monidialog - INFO - etapa: 2
+2020-01-26 02:45:30,921 - monidialog - INFO - Potencia RT: 5  Tempo: 60  Modo: 1
+2020-01-26 02:45:37,491 - monidialog - INFO - Operação iniciada
+2020-01-26 02:45:37,492 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:46:37,497 - monidialog - INFO - Operação iniciada
+2020-01-26 02:46:37,498 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:46:37,499 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:46:37,500 - monidialog - INFO - etapa: 3
+2020-01-26 02:46:37,501 - monidialog - INFO - Potencia RT: 5.0  Tempo: 60  Modo: 1
+2020-01-26 02:46:42,461 - monidialog - INFO - Operação iniciada
+2020-01-26 02:46:42,462 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:47:42,478 - monidialog - INFO - Operação iniciada
+2020-01-26 02:47:42,479 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 60  Step de Tempo: 120  Modo: 1
+2020-01-26 02:47:42,479 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:47:42,480 - monidialog - INFO - etapa: 4
+2020-01-26 02:47:42,480 - monidialog - INFO - Potencia RT: 5.0  Tempo: 60  Modo: 1
+2020-01-26 02:48:20,041 - monidialog - INFO - Operação iniciada
+2020-01-26 02:48:20,042 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:49:25,051 - monidialog - INFO - Operação iniciada
+2020-01-26 02:49:25,051 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:49:25,091 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:49:25,092 - monidialog - INFO - etapa: 2
+2020-01-26 02:49:25,092 - monidialog - INFO - Potencia RT: 5  Tempo: 65  Modo: 1
+2020-01-26 02:49:30,361 - monidialog - INFO - Operação iniciada
+2020-01-26 02:49:30,362 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:50:35,536 - monidialog - INFO - Operação iniciada
+2020-01-26 02:50:35,537 - monidialog - INFO - Potencia Inicial: 5  Potencia Final: 5  Step de Potencia: 0.0  Tempo: 65  Step de Tempo: 130  Modo: 1
+2020-01-26 02:50:35,675 - monidialog - INFO - Operação pausada: 0.000000
+2020-01-26 02:50:35,676 - monidialog - INFO - etapa: 3
+2020-01-26 02:50:35,676 - monidialog - INFO - Potencia RT: 5.0  Tempo: 65  Modo: 1
